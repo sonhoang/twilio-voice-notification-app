@@ -43,6 +43,11 @@ export class TestCallController {
         hostname: baseUrl.hostname,
         pathname: '/api/test-call/callback',
       });
+	  
+	  console.log("Here 1");
+	  
+	  
+	  
 
       return await this.testCallService.create(
         to,

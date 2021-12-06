@@ -36,7 +36,21 @@ export class TwilioService {
     message: string,
   ) {
     const twiml = new Twiml.VoiceResponse();
-    twiml.say(message);
+	
+	
+	
+	const url = "https://ci-demo-voice-notification.s3.ap-southeast-1.amazonaws.com/data/ddab2dfdfda614f84db7.mp3";
+	
+	twiml.play(url);
+	
+	console.log(twiml.toString());
+	
+    //twiml.say(message);
+	/*twiml.say({
+		voice: 'Polly.Zhiyu',
+		//language: 'fr-FR'
+	}, 'Chapeau!');*/
+	
 
     const { sid: callSid, status } = await this.client.calls.create({
       statusCallback,

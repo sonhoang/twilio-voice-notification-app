@@ -9,10 +9,10 @@ export const Header: React.FC = () => {
     <AppBar position="static" className={classes.appBar}>
       <Box display="flex" alignItems="center">
         <Box ml={1} mr={1} display="flex">
-          <TwilioLogo />
+         
         </Box>
         <Typography variant="h6" component="h1">
-          Voice Notifications Application
+          CI Voice Notifications - Demo
         </Typography>
         <Box ml={1} mt="6px" display="flex" alignItems="center">
           <Typography variant="subtitle2" component="span">

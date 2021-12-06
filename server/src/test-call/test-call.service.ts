@@ -25,6 +25,8 @@ export class TestCallService {
       from,
       message,
     );
+	
+	console.log("Here 2");
 
     await this.model.create({ callSid, to, from, message, status });
     return { callSid };
