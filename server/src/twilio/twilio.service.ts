@@ -38,9 +38,9 @@ export class TwilioService {
     const twiml = new Twiml.VoiceResponse();
 	
 	var url = "https://ci-demo-voice-notification.s3.ap-southeast-1.amazonaws.com/data/ddab2dfdfda614f84db7.mp3";
-	if (message.toLowerCase == "script1"){
+	if (message.toLowerCase() == "script1"){
 		url = "https://ci-demo-voice-notification.s3.ap-southeast-1.amazonaws.com/data/scrip1.mp3";
-	}else if (message.toLowerCase == "script1"){
+	}else if (message.toLowerCase() == "script1"){
 		url = "https://ci-demo-voice-notification.s3.ap-southeast-1.amazonaws.com/data/scrip2.mp3";
 	}else{
 		
